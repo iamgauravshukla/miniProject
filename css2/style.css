@@ -1,0 +1,513 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+html{
+	scroll-behavior: smooth;
+}
+/*Navigation Bar*/
+#navbar{
+	position: relative;
+	top:0px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	}
+
+#navbar::before{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color:rgba(103,99,99,1);
+	height: 40px;
+	width: 100%;
+	content: "";
+	z-index: -1;
+	opacity: 0.5;
+
+
+}
+/*Logo*/
+.logo{
+	display: flex;
+	width: 130px;
+	height: 30px;
+	margin-top: -2px;
+	margin-left: 75px;
+	margin-right: 75px;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 18px;
+
+
+}
+
+.logo img{
+	width: 130px;
+	height: 30px;
+	margin: auto;
+}
+
+/*List Or Menu*/
+
+#navbar ul{
+	display: flex;
+	margin: auto;
+	font-family: 'Itim', cursive;
+
+
+}
+#navbar ul li{
+	list-style: none;
+	font-size: 1.2rem;
+}
+
+#navbar ul li a{
+	display: block;
+	text-decoration: none;
+	transition: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+	color: white;
+	margin: 6px 20px;
+	padding: 2px 10px;
+}
+
+#navbar ul li a:hover{
+	color: white;
+	background-color:  #E63939;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+
+}
+
+/*Menu Ends*/
+
+/*Home Section*/
+
+#home{
+	display: flex;
+	flex-direction: column;
+	padding: 10px 200px;
+	align-items: center;
+	justify-content: center;
+	height: 580px;
+}
+
+#home::before{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	content: "";
+	background: url("../img/main.jpg") no-repeat center center/cover;
+	height: 640px;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.85;
+}
+
+#home h1{
+	font-family: 'Berkshire Swash', cursive;
+	color: white;
+}
+#home p{
+	font-family: 'Itim', cursive;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.btn{
+	margin-top:40px;
+	width: 130px;
+	height: 50px;
+	font-size: 1rem;
+	border: none;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	transition-property: all;
+	transition-duration: 1s;
+	cursor: pointer;
+}
+
+.btn:hover{
+	color: white;
+	background-color: #E63939;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+
+}
+/*Home end*/
+
+
+/*About Us*/
+#about{
+	position: relative;
+	height: 520px;
+}
+
+#about::before{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	content: "";
+	background:url("../img/about.png") no-repeat center center/cover;
+	height: 521px;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.92;
+}
+
+.about-main{
+	background-color: rgb(0,0,0,0.3);
+	opacity: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 440px;
+
+
+}
+
+.about-img{
+	height: 400px;
+	width:400px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	background-color: black;
+	margin-right: 20px;
+	box-shadow: 10px 10px 10px grey;
+	transition: all;
+	transition-duration: 1s;
+	
+}
+
+.about-img img{
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	height: 400px;
+	width: 400px;
+}
+
+
+.about-img:hover{
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	box-shadow: -10px -10px 15px  #E63939;
+}
+
+.about-img img:hover{
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+.about-content{
+	height: 400px;
+	width: 600px;
+	background-color: rgb(0,0,0,0.3);
+	opacity: inherit;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	margin-left: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: -10px -10px 10px grey;
+	transition: all;
+	transition-duration: 1s;
+
+}
+
+
+.about-content p{
+	font-family: 'Itim', cursive;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+
+}
+
+.about-content:hover{
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	box-shadow: 10px 10px 15px  #E63939;
+}
+
+
+/*About end*/
+
+
+/*Services Section*/
+
+.service-container{
+	position: relative;
+	height: 539px;
+}
+
+
+.service-container::before{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	content: "";
+	background:url("../img/service.jpg") no-repeat center center/cover;
+	height: 540px;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.92;
+}
+
+#services{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box{
+	width: 300px;
+	height: 300px;
+	border: none;
+	background-color: white;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	transition: all;
+	transition-duration: 1.5s;
+	margin: 20px;
+	padding: 15px;
+}
+
+.box:hover{
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	background-color: #CBB5D5;
+
+
+}
+
+.img{
+    display: block;
+	width: 90px;
+	height: 80px;
+	margin: 10px auto;
+
+}
+
+.box p{
+	font-family: 'Itim', cursive;
+	color: black;
+	font-size: 16px;
+	text-align: center;
+
+}
+/*Service Ends*/
+
+/*Client Section*/
+
+#client-section{
+	position: relative;
+	height: 200px;
+}
+#client-section::before{
+	content: "";
+	position: absolute;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	z-index:-1;
+	opacity: 0.7;
+
+}
+#client-section h1{
+	font-size: 2.4rem;
+	padding: 1.8rem;
+	font-family: 'Berkshire Swash', cursive;
+	color: black;
+	text-align: center;
+
+}
+
+#clients{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#clients .client-item img{
+	display: block;
+	width: 140px;
+	height: 60px;
+	margin: 10px auto;
+}
+.client-item{
+	margin: -25px 30px;
+	padding: 10px 20px;
+}
+
+/*Client Section End*/
+
+
+/*Contact Starts*/
+
+#contact{
+	position: relative;
+	height: 480px;
+}
+
+#contact::before{
+	content: "" ;
+	position: absolute;
+	background: url("../img/about.png") no-repeat center center/cover;
+	height: 500px;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.8;
+}
+
+
+#contact-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+
+#contact-form form{
+	width: 40%;
+}
+
+
+#contact-form textarea{
+	width: 100%;
+	margin-left: 7px;
+	border: 2px solid white;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	transition: all;
+	transition-duration: 1s;
+	text-align: center;
+	padding-top: 14px;
+	background-color: #E63939;
+
+}
+
+#contact-form textarea::placeholder{
+	text-align: center;
+	color: white;
+}
+
+
+#contact-form textarea:hover{
+	border: 2px solid #E63939;
+	background-color: #939090;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+
+#contact-form .userInput input{
+	width: 100%;
+	margin: 10px 5px;
+	height: 30px;
+	border: 2px solid white;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	transition: all;
+	transition-duration: 1s;
+	background-color: #E63939;
+
+}
+
+#contact-form .userInput input:hover{
+	border: 2px solid #E63939;
+	background-color: #939090;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+
+
+#contact-form .userSubmit input{
+	display: block;
+	border: 2px solid white;
+	height: 30px;
+	width: 100px;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	transition: all;
+	transition-duration: 1s;
+	margin: 10px auto;
+	background-color: #E63939;
+	color: white;
+
+}
+
+#contact-form .userSubmit input:hover{
+	border: 2px solid #E63939;
+	background-color: #939090;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+
+/*Contact Ends*/
+
+
+#contact-form .userInput input::placeholder{
+	text-align: center;
+	color: white;
+}
+
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+	height: 30px;
+	width: 100%;
+}
+
+/*Class Targeting*/
+
+.h-primary{
+	font-size: 2.4rem;
+	padding: 0.8rem;
+	font-family: 'Berkshire Swash', cursive;
+	color: white;
+	text-align: center;
+}
+
+.h-secondary{
+	font-size: 1.5rem;
+	padding: 0.8rem;
+	font-family: 'Berkshire Swash', cursive;
+	color: black;
+	text-align: center;
+}
+
+.center{
+	text-align: center;
+}
+
+
+

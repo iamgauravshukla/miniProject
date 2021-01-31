@@ -1,0 +1,81 @@
+
+#navbar ul li{
+	font-size: 0.5rem;
+}
+
+#navbar ul li a{
+    margin: 6px 12px;
+}
+
+
+
+/*About Section*/
+.about-main{
+	height: 556px;
+}
+
+#about{
+	height: 629px;
+	margin-top: -60px;
+}
+#about::before {
+    height: 629px;
+}
+
+
+.about-content {
+    height: 360px;
+    width: 330px;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.about-content p {
+    font-size: 12px;
+}
+
+/*Services Section*/
+
+
+.service-container { 
+    height: 730px;
+    margin-top: -5px;
+}
+.service-container::before{
+	height: 732px;
+}
+
+#services .box{
+    width: 200px;
+    height: 190px;
+    margin: 6px;
+    padding: 8px;
+}
+
+
+/*Client Section*/
+
+.client-item {
+    margin: -25px 6px;
+    padding: 14px 12px;
+}
+
+
+/*Contact Section*/
+#contact{
+	height: 440px;
+}
+#contact::before{
+	height: 440px;
+}
+
+
+/*Utility Classes*/
+.h-primary{
+	font-size: 1.4rem;
+}
+
+.h-secondary {
+    font-size: 1rem;
+    padding: 0.3rem;
+}
